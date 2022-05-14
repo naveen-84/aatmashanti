@@ -6,24 +6,27 @@
 
 :root {
   --orange: #ff9814;
+  --dark: black;
+  --dark-2: #222;
+  --light: white;
 }
 
 *::selection {
   background: var(--orange);
-  color: #fff;
+  color: var(--light);
 }
 
-html {
-  overflow-x: hidden;
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
+/* Button starts*/
 .btn {
   font-size: 1rem;
   padding: 0 16px;
   background: var(--orange);
-  color: #fff;
-  margin-top: 1rem;
-  margin-left: 5rem;
+  color: var(--light);
   cursor: pointer;
   height: 40px;
   display: flex;
@@ -36,32 +39,37 @@ html {
 }
 
 .btn:hover {
-  background: #333;
+  background: var(--dark);
+}
+/* Button ends */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 3px;
+  left: 0;
   z-index: 1000;
-  background: #fff;
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.03);
   width: 100%;
+  background: var(--orange);
+  padding: 0.75rem;
 }
 
-header .heading {
-  font-size: 4rem;
-  color: #666;
-  padding: 2rem;
-  text-align: center;
+header h1 {
+  margin: 0;
+  font-size: 22px;
 }
 
-header #menu {
-  font-size: 4rem;
-  color: #666;
-  cursor: pointer;
-  margin: 1.5rem;
-  display: none;
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
 }
 
 header .navbar ul {
@@ -69,8 +77,7 @@ header .navbar ul {
   align-items: center;
   justify-content: center;
   list-style: none;
-  background: var(--orange);
-  padding: 0.75rem;
+  margin: 0;
 }
 
 header .navbar ul li {
@@ -79,42 +86,56 @@ header .navbar ul li {
 
 header .navbar ul li a {
   font-size: 1rem;
-  color: #fff;
+  color: var(--light);
+  text-decoration: none;
 }
-header .navbar ul li a:hover {
-  color: #444;
+
+header .navbar ul li a:hover,
+header .navbar ul li a:active,
+header .navbar ul li a.active {
+  color: var(--dark);
 }
+
 .home {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   background: url(./Photo/home-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  flex-wrap: wrap;
+  padding: 16px 0;
 }
+
 .home .image {
-  flex: 1 1 40rem;
+  flex: 0 0 40%;
 }
+
 .home .image img {
   width: 100%;
 }
+
 .home .content {
-  flex: 1 1 40rem;
+  flex: 0 0 60%;
 }
+
 .home .content h1 {
-  font-size: 5rem;
-  margin-left: 5rem;
+  font-size: 4rem;
   color: rgb(255, 0, 0);
+  margin: 0 0 1rem 0;
+  line-height: 0.8;
 }
+
 .home .content p {
-  font-size: 2rem;
-  color: rgb(5, 5, 5);
-  padding: 1rem 0;
-  margin-left: 5rem;
+  font-size: 1.25rem;
+  margin: 0;
+  margin-bottom: 16px;
 }
+
+.home .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
 .about {
   min-height: 100vh;
   display: flex;
@@ -340,27 +361,23 @@ header .navbar ul li a:hover {
 .footer .box-container form {
   display: flex;
   align-items: center;
+  gap: 8px;
 }
+
 .footer .box-container form input[type="email"] {
-  height: 4rem;
-  width: 20rem;
-  font-size: 1.7rem;
+  height: 40px;
   padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid transparent;
 }
 .footer .box-container form .btn {
-  margin-top: 0;
-  margin-left: 0;
-  height: 4rem;
-  width: 15rem;
-  font-size: 2rem;
-}
-.footer .box-container form .btn:hover {
-  color: #333;
-  background: #ccc;
+  width: fit-content;
 }
 .footer .credit {
-  font-size: 2rem;
-  background: #222;
+  background: var(--dark-2);
   text-align: center;
   color: #fff;
   padding: 2rem 1rem;
@@ -371,84 +388,43 @@ header .navbar ul li a:hover {
 }
 
 /* media queries */
-
-@media (max-width: 768px) {
-  html {
-    font-size: 55%;
+@media (max-width: 767px) {
+  header h1 {
+    font-size: 20px;
   }
-  .home .content {
-    text-align: center;
-  }
-  .home .content h1 {
-    font-size: 4rem;
-  }
-  .about .content h1 {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 500px) {
-  html {
-    font-size: 50%;
-  }
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1.5rem;
-  }
-  header #menu {
-    display: block;
-  }
-  header .navbar {
+  .navbar {
     position: fixed;
-    top: 6.2rem;
-    right: -120%;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    border-top: 0.2rem solid rgba(0, 0, 0, 0.03);
+    width: 200px;
+    height: 100vh;
+    top: 34px;
+    right: -100%;
+    background-color: var(--orange);
+    transition: right 0.3s;
+    overflow-y: auto;
+    padding: 16px;
   }
-  header .navbar u1 {
-    height: 100%;
-    width: 100%;
-    flex-flow: column;
-    background: #fff;
-    padding-bottom: 15rem;
-  }
-  header .navbar u1 li {
-    text-align: center;
-    width: 100%;
-    margin: 1rem 0;
-  }
-  header .navbar u1 li a {
-    font-size: 4rem;
-    color: #333;
-    display: block;
-  }
-  header .navbar u1 li a:hover {
-    color: var(--orange);
-  }
-  .fa-times {
-    transform: rotate(180deg);
-  }
-  header .navbar.nav-toggle {
+
+  .navbar.open {
     right: 0;
   }
-  section {
-    padding-top: 5rem;
+
+  .navbar ul {
+    flex-direction: column;
   }
-  .footer .box-container .box:last-child {
-    text-align: center;
+
+  header .navbar ul li {
+    margin-bottom: 8px;
   }
-  .footer .box-container .box:last-child p {
-    font-size: 1.5rem;
+
+  .home .container {
+    flex-direction: column;
   }
-  .footer .box-container .box:last-child form {
-    flex-flow: column;
+
+  .home .content h1 {
+    font-size: 20px;
   }
-  .footer .box-container .box:last-child form .btn {
-    margin-top: 1rem;
-    width: 100%;
+
+  .home .content p {
+    font-size: 14px;
   }
 }
