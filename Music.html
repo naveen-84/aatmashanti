@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music</title>
+    <!-- font awesome cdn link  -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdns.cloudflare.com/ajax/libs/font-awesomw/5.15.2/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header section starts -->
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Thought.html">Thought</a></li>
+          <li><a href="Music.html">Music</a></li>
+          <li><a href="Plan.html">Plan</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- header section ends -->
+
+    <!-- Music section start -->
+
+    <div class="ram">
+      <div class="nav">
+        <div class="logo"></div>
+      </div>
+      <div calss="om">
+        <div class="left-col">
+          <h1>THE<br />MEDITATION<br />MUSIC</h1>
+        </div>
+        <div class="right-col">
+          <p>Click Here To Listen</p>
+          <img src="./Photo/play.png" id="icon" />
+        </div>
+      </div>
+    </div>
+    <audio id="mysong">
+      <source
+        src="./Music/Krishna's Calliope - Jesse Gallagher.mp3"
+        type="audio/mp3"
+      />
+    </audio>
+    <script>
+      var mysong = document.getElementById("mysong");
+      var icon = document.getElementById("icon");
+      icon.onclick = function () {
+        if (mysong.paused) {
+          mysong.play();
+          icon.src = "./Photo/pause.png";
+        } else {
+          mysong.pause();
+          icon.src = "./Photo/play.png";
+        }
+      };
+    </script>
+
+    <!-- Music section end -->
+
+    <!-- footer section start -->
+
+    <div class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>why choose us</h3>
+          <p></p>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Thought</a>
+          <a href="#">Music</a>
+          <a href="#">Plan</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="box">
+          <h3>newsletter</h3>
+          <p>subscribe us for latest updates</p>
+          <form action="">
+            <input type="email" placeholder="your email" />
+            <input type="sumit" class="btn" value="subscribe" />
+          </form>
+        </div>
+      </div>
+      <h1 class="credit">
+        created by <a href="#">Mr. Naveen Kaushik</a> | All rights reserved
+      </h1>
+    </div>
+
+    <!-- footer section end -->
+
+    <!-- jquery cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- custom js file link -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
