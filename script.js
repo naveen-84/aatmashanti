@@ -43,11 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
       isMobile = false;
     }
   };
-
-  window.addEventListener("resize", (e) => {
-    toggleIsMobile();
-    toggleHeader();
-  });
   toggleIsMobile();
   toggleHeader();
 });
