@@ -18,18 +18,18 @@
   <body>
     <!-- header section starts -->
     <header>
-      <h1 class="heading">Contact us</h1>
-
-      <div id="menu" class="fas fa-bars"></div>
+      <div class="container">
+        <h1>Aatmashanti</h1>
+        <div class="navbar">
+      </div>
 
       <nav class="navbar">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="About.html">About</a></li>
-          <li><a href="Thought.html">Thought</a></li>
           <li><a href="Music.html">Music</a></li>
           <li><a href="Plan.html">Plan</a></li>
-          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="Contact.html" class="active">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -50,15 +50,17 @@
           class="box message"
           placeholder="Message"
         ></textarea>
-        <input type="submit" class="btn" value="send message" />
+        <input type="submit" class="btn" value="Send Message" />
       </form>
       <div class="contect">
-        <h3>contact us for latest updates</h3>
-        <div class="icons">
-          <i class="fas fa-map-marker-alt"></i> agra uttar pradesh india 282005.
-        </div>
-        <div class="icons"><i class="fas fa-globe"></i> www.atamsanti.com</div>
-        <div class="icons"><i class="fas fa-phone"></i> +91-8077823943.</div>
+        <h3>Contact us for latest updates</h3>
+        <div class="icons"></i> Agra Uttar Pradesh India 282005.</div>
+
+        <div class="icons"><i class="image">
+              <img src="./Photo/globe.svg" alt="" /></i> www.atamsanti.com</div>
+
+        <div class="icons"><i class="image">
+              <img src="./Photo/telephone.svg" alt="" /></i> +91-8077823943</div>
       </div>
     </section>
 
@@ -66,42 +68,41 @@
 
     <!-- footer section start -->
 
-    <div class="footer">
+    <footer class="footer">
       <div class="box-container">
         <div class="box">
-          <h3>why choose us</h3>
+          <h3>Why choose us</h3>
           <p></p>
         </div>
 
         <div class="box">
-          <h3>quick links</h3>
+          <h3>Quick links</h3>
           <a href="#">Home</a>
           <a href="#">About</a>
-          <a href="#">Thought</a>
           <a href="#">Music</a>
           <a href="#">Plan</a>
           <a href="#">Contact</a>
         </div>
 
         <div class="box">
-          <h3>newsletter</h3>
-          <p>subscribe us for latest updates</p>
+          <h3>Newsletter</h3>
+          <p>Subscribe us for latest updates</p>
           <form action="">
-            <input type="email" placeholder="your email" />
-            <input type="sumit" class="btn" value="subscribe" />
+            <input type="email" placeholder="Your Email" />
+            <button type="submit" class="btn">Submit</button>
           </form>
         </div>
       </div>
-      <h1 class="credit">
-        created by <a href="#">Mr. Naveen Kaushik</a> | All rights reserved
-      </h1>
-    </div>
+      <p class="credit">
+        Created by <a href="#">Mr. Naveen Kaushik</a> | All rights reserved
+      </p>
+    </footer>
 
     <!-- footer section end -->
 
     <!-- jquery cdn link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- custom js file link -->
-    <script src="js/script.js"></script>
+   <script src="script.js"></script>
   </body>
 </html>
