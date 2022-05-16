@@ -29,7 +29,7 @@ body {
   color: var(--light);
   cursor: pointer;
   height: 40px;
-  display: flex;
+  display: center;
   align-items: center;
   justify-content: center;
   gap: 8px;
@@ -39,9 +39,11 @@ body {
 }
 
 .btn:hover {
-  background: var(--dark);
+  background: #666;
 }
 /* Button ends */
+
+/* hearder starts*/
 
 .container {
   max-width: 1200px;
@@ -96,8 +98,13 @@ header .navbar ul li a.active {
   color: var(--dark);
 }
 
+/* header end*/
+
+/* Home starts*/
+
 .home {
-  background: url(./Photo/home-bg.jpg) no-repeat;
+  min-height: 140%;
+  background-image: url(./Photo/home-bg.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -109,7 +116,7 @@ header .navbar ul li a.active {
 }
 
 .home .image img {
-  width: 100%;
+  width: 130%;
 }
 
 .home .content {
@@ -136,8 +143,12 @@ header .navbar ul li a.active {
   gap: 16px;
 }
 
+/* Home end*/
+
+/* About starts*/
+
 .about {
-  min-height: 100vh;
+  min-height: 90%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -145,45 +156,56 @@ header .navbar ul li a.active {
   background-size: cover;
   background-position: center;
   flex-wrap: wrap;
-  padding-bottom: 2rem;
 }
+
 .about .image {
-  flex: 1 1 40rem;
+  flex: 1 1 40%;
 }
 .about .image img {
   width: 100%;
 }
+
 .about .content {
-  flex: 1 1 40rem;
+  flex: 1 1 40%;
 }
+
 .about .content h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   margin-left: 5rem;
   color: #666;
 }
+
 .about .content p {
-  font-size: 1.6rem;
+  font-size: 1.25rem;
   color: rgb(5, 5, 5);
-  padding: 1rem 0;
   margin-left: 5rem;
 }
+.about .btn {
+  display: center;
+}
+
+/* about end*/
+
+/* Music starts*/
 
 .ram {
-  margin-top: 5rem;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   background-image: url(./Photo/home-bg.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
 }
+
 .logo {
   font-family: sans-serif;
   font-size: 2.5em;
 }
+
 .logo span {
   color: #ff6200;
 }
+
 .nav {
   width: 88%;
   margin: auto;
@@ -197,185 +219,228 @@ header .navbar ul li a.active {
   width: 100%;
   position: absolute;
 }
+
 .left-col {
   margin-left: 5%;
-  margin-top: 10%;
+  margin-top: 4%;
 }
+
 .left-col h1 {
-  font-size: 75px;
+  font-size: 5rem;
   color: rgb(7, 6, 5);
   line-height: 100px;
   float: left;
 }
+
 .right-col {
   float: right;
-  margin-right: 6%;
-  margin-top: 120px;
+  margin-right: 10rem;
+  margin-top: 12rem;
   display: flex;
   align-items: center;
 }
+
 .right-col p {
   font-size: 18px;
   color: #000000;
   font-weight: 400;
 }
+
 #icon {
   width: 80px;
   cursor: pointer;
 }
 
+/* Music end*/
+
+/* Plan starts*/
+
 .plan {
   min-height: 100%;
-  background: #eee;
+  background-image: url(./Photo/home-bg.jpg);
 }
+
 .plan .box-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
+
 .plan .box-container .box {
   background: #fff;
   margin: 1rem;
   padding: 2rem;
-  width: 35rem;
+  width: 20rem;
   text-align: center;
   box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.03);
   position: relative;
+  margin-top: 0;
 }
+
 .plan .box-container .box .title {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #666;
   padding: 1rem 0;
+  margin-top: -1rem;
 }
+
 .plan .box-container .box .price {
   background: var(--orange);
   color: #fff;
   border-radius: 50%;
   margin: 1rem auto;
-  height: 13rem;
-  width: 13rem;
-  line-height: 13rem;
+  height: 7rem;
+  width: 7rem;
+  line-height: 7rem;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 1.3rem;
 }
+
 .plan .box-container .box .price spam {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
+
 .plan .box-container .box u1 li {
   color: #666;
   list-style: none;
-  font-size: 1.7rem;
-  padding: 0.5rem 0;
+  font-size: 1.2rem;
+  padding: 0.3rem 0;
 }
+
+/* Plan starts*/
+
+/* Contact starts*/
+
 .contact {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
 .contact form {
-  flex: 1 1 30rem;
+  flex: 1 1 15rem;
   padding: 2rem;
   margin: 1rem;
-  margin-top: 4rem;
+
   box-shadow: 0 0 0.5rem rgb(0, 0, 0);
 }
+
 .contact .contect {
-  flex: 1 1 40rem;
-  padding: 3rem 1rem;
-  font-size: 1.5rem;
+  flex: 1 1 35rem;
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
 }
+
 .contact form .box {
   width: 100%;
   color: #333;
-  height: 4rem;
-  font-size: 1.7rem;
+  height: 2rem;
+  font-size: 1.3rem;
   border-bottom: 0.2rem solid rgba(0, 0, 0, 0.374);
   text-transform: none;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
+
 .contact form .box::placeholder {
   text-transform: capitalize;
 }
+
 .contact form .box:focus {
   border-color: var(--orange);
 }
+
 .contact form .message {
-  height: 15rem;
+  height: 13rem;
   resize: none;
 }
+
 .contact .contect h3 {
-  font-size: 3.5rem;
+  font-size: 2.75rem;
   color: #444;
 }
-.contact .contect p {
-  font-size: 1.8rem;
-  color: #666;
-  padding: 1rem 0;
-}
+
 .contact .contect .icons {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #333;
   padding: 0.5rem 0;
 }
+
 .contact .contect .icons i {
   padding-right: 0.5rem;
   color: var(--orange);
 }
+
+/* Contact end*/
+
+/* footer starts*/
+
 .footer {
   background: #333;
 }
+
 .footer .box-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .footer .box-container .box {
-  margin: 2rem;
-  flex: 1 1 30rem;
+  margin: 1.5rem;
+  flex: 1 0 1px;
 }
+
 .footer .box-container .box h3 {
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   color: #fff;
 }
+
 .footer .box-container .box p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #eee;
   padding: 1rem 0;
 }
+
 .footer .box-container .box a {
-  font-size: 2rem;
+  font-size: 1rem;
   color: #eee;
   padding: 0.4rem 0;
   display: block;
+  text-decoration: none;
 }
+
 .footer .box-container .box a:hover {
-  text-decoration: underline;
+  color: var(--orange);
 }
+
 .footer .box-container .box:nth-child(2) {
   text-align: center;
+  margin-left: -5.05rem;
 }
+
 .footer .box-container form {
   display: flex;
-  align-items: center;
+  align-items: right;
   gap: 8px;
+  margin-right: -2rem;
 }
 
 .footer .box-container form input[type="email"] {
   height: 40px;
   padding: 0 1rem;
   display: flex;
-  align-items: center;
+  align-items: right;
   border-radius: 4px;
   outline: none;
   border: 1px solid transparent;
 }
+
 .footer .box-container form .btn {
   width: fit-content;
 }
+
 .footer .credit {
   background: var(--dark-2);
   text-align: center;
@@ -383,11 +448,16 @@ header .navbar ul li a.active {
   padding: 2rem 1rem;
   font-weight: normal;
 }
+
 .footer .credit a {
   color: #ff9814;
+  text-decoration: none;
 }
 
+/* footer end*/
+
 /* media queries */
+
 @media (max-width: 767px) {
   header h1 {
     font-size: 20px;

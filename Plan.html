@@ -17,21 +17,23 @@
   </head>
   <body>
     <!-- header section starts -->
-    <header>
-      <h1 class="heading">Choose a Plan</h1>
-
-      <div id="menu" class="fas fa-bars"></div>
-
-      <nav class="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="Thought.html">Thought</a></li>
-          <li><a href="Music.html">Music</a></li>
-          <li><a href="Plan.html">Plan</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="">
+      <div class="container">
+        <h1>Aatmashanti</h1>
+        <nav class="navbar">
+          <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Music.html">Music</a></li>
+            <li><a href="Plan.html" class="active">Plan</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger_menu">
+          <img src="./Photo/list.svg" id="open_hamburger" />
+          <img src="./Photo/x-circle.svg" id="close_hamburger" />
+        </div>
+      </div>
     </header>
     <!-- header section ends -->
 
@@ -40,16 +42,16 @@
     <section class="plan">
       <div class="box-container">
         <div class="box">
-          <h3 class="title">basic</h3>
+          <h3 class="title">Basic</h3>
           <div class="price">
             <h1>$1<span>/mo</span></h1>
           </div>
           <u1>
             <li>1 GB space</li>
-            <li>maintenance</li>
+            <li>Maintenance</li>
             <li>1 Sub domains</li>
           </u1>
-          <a href="#"><button class="btn">checkn out</button></a>
+          <button class="btn">Check out</button>
         </div>
 
         <div class="box">
@@ -59,10 +61,10 @@
           </div>
           <u1>
             <li>3 GB space</li>
-            <li>maintenance</li>
+            <li>Maintenance</li>
             <li>5 Sub domains</li>
           </u1>
-          <a href="#"><button class="btn">checkn out</button></a>
+          <button class="btn">Check out</button>
         </div>
 
         <div class="box">
@@ -72,10 +74,10 @@
           </div>
           <u1>
             <li>5 GB space</li>
-            <li>maintenance</li>
+            <li>Maintenance</li>
             <li>10 Sub domains</li>
           </u1>
-          <a href="#"><button class="btn">checkn out</button></a>
+          <button class="btn">Check out</button>
         </div>
       </div>
     </section>
@@ -84,42 +86,41 @@
 
     <!-- footer section start -->
 
-    <div class="footer">
+    <footer class="footer">
       <div class="box-container">
         <div class="box">
-          <h3>why choose us</h3>
+          <h3>Why choose us</h3>
           <p></p>
         </div>
 
         <div class="box">
-          <h3>quick links</h3>
+          <h3>Quick links</h3>
           <a href="#">Home</a>
           <a href="#">About</a>
-          <a href="#">Thought</a>
           <a href="#">Music</a>
           <a href="#">Plan</a>
           <a href="#">Contact</a>
         </div>
 
         <div class="box">
-          <h3>newsletter</h3>
-          <p>subscribe us for latest updates</p>
+          <h3>Newsletter</h3>
+          <p>Subscribe us for latest updates</p>
           <form action="">
-            <input type="email" placeholder="your email" />
-            <input type="sumit" class="btn" value="subscribe" />
+            <input type="email" placeholder="Your Email" />
+            <button type="submit" class="btn">Submit</button>
           </form>
         </div>
       </div>
-      <h1 class="credit">
-        created by <a href="#">Mr. Naveen Kaushik</a> | All rights reserved
-      </h1>
-    </div>
+      <p class="credit">
+        Created by <a href="#">Mr. Naveen Kaushik</a> | All rights reserved
+      </p>
+    </footer>
 
     <!-- footer section end -->
 
     <!-- jquery cdn link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- custom js file link -->
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
