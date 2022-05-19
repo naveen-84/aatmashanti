@@ -45,7 +45,7 @@ body {
 /* hearder starts*/
 
 .container {
-  max-width: 700px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -257,7 +257,7 @@ header .navbar ul li a.active {
 /* Plan starts*/
 
 .plan {
-  min-height: 100%;
+  min-height: 140%;
   width: 102.3%;
   background-image: url(./Photo/home-bg.jpg);
 }
