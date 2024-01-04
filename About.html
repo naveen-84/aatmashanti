@@ -9,25 +9,30 @@
 
     <link
       rel="stylesheet"
-      href="https://cdns.cloudflare.com/ajax/libs/font-awesomw/5.15.2/css/all.min.css"
-    />
+      href="https://cdns.cloudflare.com/ajax/libs/font-awesomw/5.15.2/css/all.min.css"/>
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- header section starts -->
-    <header>
+   <header class="">
+      <div class="container">
+        <h1>Aatmashanti</h1>
       <nav class="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="About.html" class="active">About</a></li>
-          <li><a href="Thought.html">Thought</a></li>
-          <li><a href="Music.html">Music</a></li>
-          <li><a href="Plan.html">Plan</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-        </ul>
-      </nav>
+          <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html" class="active">About</a></li>          
+            <li><a href="Thought.html">Thought</a></li>
+            <li><a href="Music.html">Music</a></li>
+            <li><a href="Plan.html">Plan</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger_menu">
+          <img src="./Photo/list.svg" id="open_hamburger" />
+          <img src="./Photo/x-circle.svg" id="close_hamburger" />
+        </div>
     </header>
     <!-- header section ends -->
 
@@ -39,10 +44,10 @@
       </div>
 
       <div class="content">
-        <h1>a word about us</h1>
-        <p>Meditation is not growth of the ego, it is death of the ego.</p>
-        <p>Meditation and concentration are the way to a life of serenity.</p>
-        <a href="#"><button class="btn">learn more</button></a>
+        <h1>A Word About Us</h1>
+        <p>Meditation can be defined as a set of techniques that are intended to encourage a heightened state of awareness and focused attention.
+           Meditation is also a consciousness-changing technique that has been shown to have a wide number of benefits on psychological well-being</p>
+       <button class="btn">Learn more</button>
       </div>
     </section>
 
@@ -50,42 +55,41 @@
 
     <!-- footer section start -->
 
-    <div class="footer">
+    <footer class="footer">
       <div class="box-container">
         <div class="box">
-          <h3>why choose us</h3>
+          <h3>Why choose us</h3>
           <p></p>
         </div>
 
         <div class="box">
-          <h3>quick links</h3>
+          <h3>Quick links</h3>
           <a href="#">Home</a>
           <a href="#">About</a>
-          <a href="#">Thought</a>
           <a href="#">Music</a>
           <a href="#">Plan</a>
           <a href="#">Contact</a>
         </div>
 
         <div class="box">
-          <h3>newsletter</h3>
-          <p>subscribe us for latest updates</p>
+          <h3>Newsletter</h3>
+          <p>Subscribe us for latest updates</p>
           <form action="">
-            <input type="email" placeholder="your email" />
-            <input type="sumit" class="btn" value="subscribe" />
+            <input type="email" placeholder="Your Email" />
+            <button type="submit" class="btn">Submit</button>
           </form>
         </div>
       </div>
-      <h1 class="credit">
-        created by <a href="#">Mr. Naveen Kaushik</a> | All rights reserved
-      </h1>
-    </div>
+      <p class="credit">
+        Created by <a href="#">Mr. Naveen Kaushik</a> | All rights reserved
+      </p>
+    </footer>
 
     <!-- footer section end -->
 
     <!-- jquery cdn link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- custom js file link -->
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

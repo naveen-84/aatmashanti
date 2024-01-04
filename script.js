@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     if (isMobile) {
-      hamburgerMenu.style.display = "block";
+      hamburgerMenu.style.display ="block";
       hamburgerMenu.addEventListener("click", () => {
         if (isHamburgerMenuOpen) {
           isHamburgerMenuOpen = false;
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         toggleHamburgerMenu();
       });
     } else {
-      hamburgerMenu.style.display = "none";
+      hamburgerMenu.style.display ="none";
     }
     toggleHamburgerMenu();
   };

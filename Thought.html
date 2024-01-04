@@ -17,31 +17,102 @@
   </head>
   <body>
     <!-- header section starts -->
-    <header>
-      <h1 class="heading">Meditation Thought</h1>
-
-      <div id="menu" class="fas fa-bars"></div>
-
-      <nav class="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="Thought.html">Thought</a></li>
-          <li><a href="Music.html">Music</a></li>
-          <li><a href="Plan.html">Plan</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+  <header>
+    <div class="container">
+        <h1>Aatmashanti</h1>
+        <nav class="navbar">
+          <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Thought.html" class="active">Thought</a></li>
+            <li><a href="Music.html">Music</a></li>
+            <li><a href="Plan.html">Plan</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      <div id="hamburger_menu">
+        <img src="./Photo/list.svg" id="open_hamburger" />
+        <img src="./Photo/x-circle.svg" id="close_hamburger" />
+      </div>
+    </div>
+  </header>
     <!-- header section ends -->
 
     <!-- Thought section start -->
 
+    <section class="thought">
+
+      <div box-container>
+
+        <div class="box">
+          <h5>Meditation is a process of lightening up, of trusting the basic goodness of what we have and who we are, 
+            and of realizing that any wisdom that exists, exists in what we already have. 
+            We can lead our life so as to become more awake to who we are and 
+            what we are doing rather than trying to improve or change or get rid of who we are or what we are doing. 
+            The key is to wake up, to become more alert, more inquisitive and curious about ourselves.</h5>
+
+          <h5>Feelings come and go like clouds in a windy sky. Conscious breathing is my anchor.</h5>
+      
+          <h5>Meditation will not carry you to another world, but it will reveal the most profound and awesome dimensions 
+            of the world in which you already live. Calmly contemplating these dimensions and bringing them into the service 
+            of compassion and kindness is the right way to make rapid gains in meditation as well as in life.</h5>
+        
+          <h5>Touch your inner space, which is nothingness, as silent and empty as the sky; it is your inner sky. Once you settle down in your
+             inner sky, you have come home, and a great maturity arises in your actions, in your behavior. Then whatever you do  has grace in it. 
+             Then whatever you do is a poetry in itself. You live poetry; your walking becomes dancing, your silence becomes music.</h5>
+        
+          <h5>The mind is madness. Only when you go beyond the mind, will there be Meditation.</h5>
+        
+          <h5>Meditation means dissolving the invisible walls that unawareness has built.</h5>
+
+        </div>
+        
+
+      </div>
+
+    </section>
+
+
     <!-- Thought section end -->
+
+    <!-- footer section start -->
+
+    <footer class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Why choose us</h3>
+          <p></p>
+        </div>
+
+        <div class="box">
+          <h3>Quick links</h3>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Thought</a>
+          <a href="#">Music</a>
+          <a href="#">Plan</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="box">
+          <h3>Newsletter</h3>
+          <p>Subscribe us for latest updates</p>
+          <form action="">
+            <input type="email" placeholder="Your Email" />
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+      <p class="credit">
+        Created by <a href="#">Mr. Naveen Kaushik</a> | All rights reserved
+      </p>
+    </footer>
+
+    <!-- footer section end -->
 
     <!-- jquery cdn link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- custom js file link -->
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
