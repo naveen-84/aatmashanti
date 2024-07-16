@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* First Page Start */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./img/Light-Colorful-HD-Wallpaper.jpg);
+  background-size: 100%; /* Change background color as desired */
+}
+
+.hero h1 {
+  font-size: 3em;
+  color: #070505; /* Change text color as desired */
+  text-align: center;
+  /* Other styles can be added to further enhance the appearance */
+}
+
+.hero a {
+  margin-top: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333; /* Change button background color */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hero a:hover {
+  background-color: #555; /* Change button background color on hover */
+}
+
+/* First Page End */
